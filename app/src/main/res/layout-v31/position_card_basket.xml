@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="5dp"
+        style="@style/card_window">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cake_view_basket"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_cake_basket" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp">
+
+                <TextView
+                    android:id="@+id/basket_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/title_card_position"
+                    android:textAppearance="@style/title_of_card_position_basket" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:id="@+id/basket_card_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/count_text"
+                        android:layout_marginEnd="3dp"
+                        android:textAppearance="@style/count" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/count_text"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="20dp"
+                        android:text="@string/count"
+                        android:textAppearance="@style/count" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

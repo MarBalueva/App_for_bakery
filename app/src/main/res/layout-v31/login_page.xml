@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bind = "http://schemas.android.com/tools">
+
+    <data>
+<variable
+    name="LoginPageViewModel"
+    type="com.example.app_for_bakery.vm_login.LoginPageViewModel" />
+        <variable
+            name="clicker"
+            type="android.view.View.OnClickListener" />
+        <variable
+            name="textclicker"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/login_page"
+        android:clipToOutline="true"
+        android:background="@color/background">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/rectangle_3"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@drawable/rectangle_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_bakery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="150dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marshmallow"
+                android:textAppearance="@style/marshmallow"
+                android:gravity="center_horizontal|top" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cakes_spec"
+                    android:textAppearance="@style/cakes_spec"
+                    android:gravity="center_horizontal|top" />
+
+                <Button
+                    android:id="@+id/btn_about_us"
+                    android:onClickListener="@{clicker}"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/img_about_us" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_inst"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_inst" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_bakery"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:id="@+id/login_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fld_login"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/enter_log_pass"
+                    android:hint="@string/enter_login"
+                    android:inputType="textEmailAddress"
+                    android:text="@={LoginPageViewModel.login}"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textAppearance="@style/enter_log_pass" />
+
+                <TextView
+                    android:id="@+id/forgot_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/forgot_login"
+                    android:textAppearance="@style/forgot_log_pass" />
+
+                <EditText
+                    android:id="@+id/fld_password"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/enter_log_pass"
+                    android:hint="@string/enter_password"
+                    android:text="@={LoginPageViewModel.password}"
+                    android:inputType="textPassword"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textAppearance="@style/enter_log_pass" />
+
+                <TextView
+                    android:id="@+id/forgot_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/forgot_pass"
+                    android:textAppearance="@style/forgot_log_pass" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_login"
+                    android:text="@string/btn_login"
+                    android:textAppearance="@style/text_btn_login"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/img_muffin" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/title_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_register"
+                android:textAppearance="@style/title_register"
+                android:gravity="center_horizontal|top" />
+
+            <TextView
+                android:id="@+id/link_to_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClickListener="@{textclicker}"
+                android:text="@string/link_to_register"
+                android:textAppearance="@style/link_to_register"
+                android:gravity="center_horizontal|top" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

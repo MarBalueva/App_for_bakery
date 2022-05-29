@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="RegisterViewModel"
+            type="com.example.app_for_bakery.vm_register.RegisterViewModel" />
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/create_account"
+        android:clipToOutline="true"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/rectangle_3"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@drawable/rectangle_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_bakery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/marshmallow"
+                android:textAppearance="@style/marshmallow"
+                android:gravity="center_horizontal|top" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cakes_spec"
+                    android:textAppearance="@style/cakes_spec"
+                    android:gravity="center_horizontal|top" />
+
+                <Button
+                    android:id="@+id/btn_about_us"
+                    android:onClickListener="@{click}"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/img_about_us" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_inst"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/img_inst" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title_bakery">
+
+            <LinearLayout
+                android:id="@+id/login_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true">
+
+                <EditText
+                    android:id="@+id/fld_reg_email"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/enter_log_pass"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="@string/register_email"
+                    android:text="@={RegisterViewModel.login}"
+                    android:textAppearance="@style/enter_log_pass" />
+
+                <EditText
+                    android:id="@+id/fld_reg_name"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/enter_log_pass"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="@string/register_name"
+                    android:text="@={RegisterViewModel.name}"
+                    android:textAppearance="@style/enter_log_pass" />
+
+
+                <EditText
+                    android:id="@+id/fld_reg_password"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/enter_log_pass"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:hint="@string/register_password"
+                    android:text="@={RegisterViewModel.password}"
+                    android:inputType="textPassword"
+                    android:textAppearance="@style/enter_log_pass" />
+
+                <EditText
+                    android:id="@+id/fld_reg_conf_password"
+                    android:layout_width="240dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/enter_log_pass"
+                    android:hint="@string/register_conf_password"
+                    android:text="@={RegisterViewModel.repeated_password}"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:inputType="textPassword"
+                    android:textAppearance="@style/enter_log_pass" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="@string/btn_register"
+                    android:textAppearance="@style/text_btn_register"
+                    android:background="@drawable/btn_login"
+                    android:layout_marginTop="30dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/img_muffin" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

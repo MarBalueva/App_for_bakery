@@ -1,0 +1,162 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.App_for_bakery" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="marshmallow">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+    <style name="cakes_spec">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="title_register">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#59000000</item>
+    </style>
+    <style name="link_to_register">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#59000000</item>
+    </style>
+    <style name="enter_log_pass">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#B5000000</item>
+    </style>
+    <style name="forgot_log_pass">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="text_btn_login">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+    <style name="text_btn_register">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+    <style name="text_title_about_us">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_follow_us">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#59000000</item>
+    </style>
+    <style name="after_follow_us">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#59000000</item>
+    </style>
+    <style name="about_bakers">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="waite_you">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="bottom_navigation">
+        <item name="colorOnPrimary">@color/font_dark</item>
+    </style>
+    <style name="change_pass_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#59000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="title_of_page">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="text_about_baker_work">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#59000000</item>
+    </style>
+    <style name="title_change_pass_dialog">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#B5000000</item>
+    </style>
+    <style name="dialog_window">
+        <item name="cardBackgroundColor">@color/background</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="contentPadding">15dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/font_dark</item>
+    </style>
+    <style name="card_window">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="contentPadding">15dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/font_dark</item>
+    </style>
+    <style name="btn_add_basket">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#B5000000</item>
+    </style>
+    <style name="btn_change_position">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#B5000000</item>
+    </style>
+    <style name="btn_add_basket_position">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#B5000000</item>
+    </style>
+    <style name="rating_bar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/font_light</item>
+        <item name="colorControlActivated">@color/bright_yellow</item>
+        <item name="android:solidColor">@color/font_dark</item>
+    </style>
+    <style name="title_order">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#B5000000</item>
+    </style>
+    <style name="btn_action_bottom">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#B5000000</item>
+    </style>
+    <style name="text_data">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#40000000</item>
+    </style>
+    <style name="title_of_card_position">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="title_of_card_position_basket">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#B5000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="count">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#54000000</item>
+    </style>
+    <style name="text_online">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#59000000</item>
+    </style>
+</resources>

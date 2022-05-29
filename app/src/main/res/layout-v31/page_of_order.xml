@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ref_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="100dp">
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/img_profile" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ref_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/title_order" />
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/title_order" />
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_window"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/gallery_page_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_where_is_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/btn_conf"
+                android:drawableEnd="@drawable/img_location"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="50dp"
+                android:text="@string/where_is_my_order"
+                android:textAppearance="@style/btn_action_bottom" />
+
+            <Button
+                android:id="@+id/btn_discus_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_conf"
+                android:drawableEnd="@drawable/img_discus"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="50dp"
+                android:text="@string/discus_my_order"
+                android:textAppearance="@style/btn_action_bottom" />
+
+            <Button
+                android:id="@+id/btn_give_review_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_conf"
+                android:drawableEnd="@drawable/img_review"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="50dp"
+                android:text="@string/give_review_my_order"
+                android:textAppearance="@style/btn_action_bottom" />
+
+            <Button
+                android:id="@+id/btn_repeat_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_conf"
+                android:drawableEnd="@drawable/img_repeat"
+                android:gravity="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="50dp"
+                android:text="@string/repeat_my_order"
+                android:textAppearance="@style/btn_action_bottom" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/dialog_window">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_number"
+                android:textAppearance="@style/enter_log_pass" />
+
+            <TextView
+                android:id="@+id/order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/data_complete"
+                android:textAppearance="@style/enter_log_pass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/thank_1"
+                android:textAppearance="@style/about_bakers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thank_2"
+                android:textAppearance="@style/about_bakers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thank_4"
+                android:textAppearance="@style/about_bakers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginEnd="5dp"
+                android:text="@string/thank_5"
+                android:textAppearance="@style/about_bakers" />
+
+            <Button
+                android:id="@+id/btn_feedback"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/give_feedback"
+                android:textAppearance="@style/title_change_pass_dialog"
+                android:background="@drawable/btn_conf" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

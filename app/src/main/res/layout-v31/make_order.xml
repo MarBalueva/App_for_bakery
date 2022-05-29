@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ref_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="100dp">
+
+            <Button
+                android:id="@+id/btn_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/img_profile" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/title_make_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/ref_profile"
+            android:layout_alignParentStart="true"
+            android:text="@string/title_make_order"
+            android:textAppearance="@style/title_of_page" />
+
+        <LinearLayout
+            android:layout_below="@+id/title_make_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                style="@style/card_window">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_biscuit"-->
+<!--                        android:textAppearance="@style/title_of_card_position"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_cream"-->
+<!--                        android:textAppearance="@style/title_of_card_position"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_topping"-->
+<!--                        android:textAppearance="@style/title_of_card_position"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/txt_weight"-->
+<!--                        android:textAppearance="@style/title_of_card_position"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+                    <ImageView
+                        android:id="@+id/img_biscuit"
+                        android:layout_width="115dp"
+                        android:layout_weight="1"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/img_cream"
+                        android:layout_width="115dp"
+                        android:layout_weight="1"
+                        android:layout_height="120dp"/>
+
+                    <ImageView
+                        android:id="@+id/img_topping"
+                        android:layout_width="115dp"
+                        android:layout_weight="1"
+                        android:layout_height="120dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="35dp"
+                android:gravity="start|center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/fld_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_biscuit"
+                    android:textAppearance="@style/btn_change_position" />
+
+                <Spinner
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/btn_biscuit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="start|center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/fld_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_cream"
+                    android:textAppearance="@style/btn_change_position" />
+
+                <Spinner
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/creme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="start|center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/fld_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_topping"
+                    android:textAppearance="@style/btn_change_position" />
+
+                <Spinner
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/topping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="start|center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/fld_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textAppearance="@style/btn_change_position" />
+
+                <Spinner
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_add_to_basket"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/result_sum"
+            android:textAppearance="@style/title_change_pass_dialog" />
+
+        <TextView
+            android:id="@+id/summary_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_add_to_basket"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/result_money"
+            android:textAppearance="@style/title_change_pass_dialog" />
+
+        <Button
+            android:id="@+id/btn_add_to_basket"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="65dp"
+            android:background="@drawable/btn_conf"
+            android:drawableEnd="@drawable/img_arrow"
+            android:gravity="start|center"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="@string/add_to_basket"
+            android:textAppearance="@style/btn_add_basket" />
+
+    </RelativeLayout>
+</layout>

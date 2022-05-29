@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+<variable
+    name="clicker"
+    type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToOutline="true"
+        android:id="@+id/about_us"
+        android:background="@color/background">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/all_content_about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/rectangle_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/rectangle_3" />
+
+                    <LinearLayout
+                        android:id="@+id/follow_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_about_us"
+                            android:layout_marginStart="20dp"
+                            android:textAppearance="@style/text_title_about_us"
+                            android:layout_weight="1" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/btn_inst"
+                                android:layout_width="46dp"
+                                android:layout_height="46dp"
+                                android:layout_marginStart="60dp"
+                                android:background="@drawable/img_inst" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_follow_us"
+                                android:layout_marginStart="20dp"
+                                android:textAppearance="@style/text_follow_us" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text_open_bakery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/all_content_about_us"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_about_us_1"
+                        android:textAppearance="@style/after_follow_us" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_about_us_2"
+                        android:textAppearance="@style/after_follow_us" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/list_of_bakers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/text_open_bakery"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="100dp">
+
+                            <Button
+                                android:id="@+id/btn_bakery_1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/img_profile" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/post_bakery_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/baker_name_1"
+                                android:layout_marginStart="15dp"
+                                android:textAppearance="@style/about_bakers" />
+
+                            <TextView
+                                android:id="@+id/name_bakery_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bakery_name_1"
+                                android:layout_marginStart="15dp"
+                                android:textAppearance="@style/about_bakers" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="100dp">
+
+                            <Button
+                                android:id="@+id/btn_bakery_2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/img_profile" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/post_bakery_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/baker_name_2"
+                                android:layout_marginStart="15dp"
+                                android:textAppearance="@style/about_bakers" />
+
+                            <TextView
+                                android:id="@+id/name_bakery_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bakery_name_2"
+                                android:layout_marginStart="15dp"
+                                android:textAppearance="@style/about_bakers" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="100dp">
+
+                            <Button
+                                android:id="@+id/btn_bakery_3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/img_profile" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/post_bakery_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/baker_name_3"
+                                android:layout_marginStart="15dp"
+                                android:textAppearance="@style/about_bakers" />
+
+                            <TextView
+                                android:id="@+id/name_bakery_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bakery_name_3"
+                                android:layout_marginStart="15dp"
+                                android:textAppearance="@style/about_bakers" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text_about_bakery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/list_of_bakers"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_about_us_3"
+                        android:textAppearance="@style/after_follow_us" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_about_us_4"
+                        android:textAppearance="@style/after_follow_us" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_about_us_5"
+                        android:textAppearance="@style/after_follow_us" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_about_us_6"
+                        android:textAppearance="@style/after_follow_us" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/title_bakery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="60dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/marshmallow"
+                        android:textAppearance="@style/marshmallow"
+                        android:gravity="center_horizontal|top" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cakes_spec"
+                        android:textAppearance="@style/cakes_spec"
+                        android:gravity="center_horizontal|top" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/title_where_we"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_about_bakery"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/where_are_we"
+                    android:textAppearance="@style/text_title_about_us" />
+
+                <LinearLayout
+                    android:id="@+id/text_where_we"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/title_where_we"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_where_we_1"
+                        android:textAppearance="@style/after_follow_us" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/img_metro" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_where_we_2"
+                            android:layout_marginStart="5dp"
+                            android:textAppearance="@style/after_follow_us" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.yandex.mapkit.mapview.MapView
+                    android:id="@+id/mapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/text_where_we" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mapview"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waite_you"
+                        android:onClick="@{clicker}"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waite_you_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waite_you_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waite_you_4" />
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/waite_you_5"
+                        android:textAppearance="@style/waite_you" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_muffin_directly"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

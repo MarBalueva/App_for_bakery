@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/rectangle_yellow" />
+
+        <RelativeLayout
+            android:id="@+id/head"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ref_bakery_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="100dp">
+
+                        <Button
+                            android:id="@+id/baker_profile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/img_profile" />
+                    </androidx.cardview.widget.CardView>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignEnd="@+id/ref_bakery_profile"
+                        android:layout_alignBottom="@+id/ref_bakery_profile"
+                        android:src="@drawable/img_online" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/baker_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bakery"
+                        android:textAppearance="@style/btn_action_bottom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/online"
+                        android:textAppearance="@style/text_online" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp">
+
+                <TextView
+                    android:id="@+id/order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_number"
+                    android:textAppearance="@style/btn_action_bottom" />
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_order"
+                    android:textAppearance="@style/btn_action_bottom" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/to_send"
+            android:layout_below="@+id/head"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <RelativeLayout
+            android:id="@+id/to_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp">
+
+            <EditText
+                android:id="@+id/send_message"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/fld_white"
+                android:hint="@string/send_message"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingStart="15dp"
+                android:paddingEnd="35dp" />
+
+            <LinearLayout
+                android:id="@+id/btns_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/img_send_mess"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

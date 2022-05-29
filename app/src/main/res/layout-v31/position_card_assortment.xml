@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="5dp"
+        style="@style/card_window">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/add_basket"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/img_plus_card" />
+
+            <ImageView
+                android:id="@+id/img_card_position_assortment"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_cake_card_position" />
+
+            <TextView
+                android:id="@+id/position_card_assortment_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/title_card_position"
+                android:textAppearance="@style/title_of_card_position" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

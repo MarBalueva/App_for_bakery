@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <Button
+            android:id="@+id/ready"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/img_mark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="@string/add_new_photo_profile"
+            android:textAppearance="@style/change_pass_text" />
+
+        <RelativeLayout
+            android:id="@+id/profile_img"
+            android:layout_marginTop="120dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="100dp">
+
+                <ImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/img_profile_big" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/img_plus_new_photo_profile" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/fld_name_fio_profile"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/profile_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/fld_white"
+            android:hint="@string/new_name_profile"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+    </RelativeLayout>
+</layout>
